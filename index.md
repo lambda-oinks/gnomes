@@ -3,6 +3,7 @@ title: Infinite Gnomes and the Axiom of Choice
 date: 2014-04-03
 author: Oinkina
 mathjax: on
+published: true
 ---
 
 Axioms are the building blocks of mathematics, with which all proofs and theorems are constructed. They are the only aspect of math that is considered to require faith. Change the axioms and you might get an entirely different self-consistent and beautiful system. For example, whole new systems of geometry, known as [spherical] and [hyperbolic geometry], grew out of challenging Euclid's Fifth Postulate on parallel lines[^1], which was considered an essential aspect of geometry for thousands of years.
