@@ -15,7 +15,7 @@ Axioms are the building blocks of mathematics, with which all proofs and theorem
 
 [Wikipedia]: http://en.wikipedia.org/wiki/Parallel_postulate 
 
-There is an axiom known as the [axiom of choice], because it seems like an axiomatically simple claim that cannot be proven, and choosing whether or not to believe in it can cause interesting things to happen. An informal definition is:
+The [axiom of choice] causes really intreresting things to happen. An informal definition is:
 
 [axiom of choice]:http://en.wikipedia.org/wiki/Axiom_of_choice
 
