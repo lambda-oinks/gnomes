@@ -6,36 +6,24 @@ mathjax: on
 published: true
 ---
 
-Axioms are the building blocks of mathematics, with which all proofs and theorems are constructed. They are the only aspect of math that is considered to require faith. Change the axioms and you might get an entirely different self-consistent and beautiful system. For example, whole new systems of geometry, known as [spherical] and [hyperbolic geometry], grew out of challenging Euclid's Fifth Postulate on parallel lines[^parallel], which was considered an essential axiom of geometry for thousands of years.
+As many great stories start, I was hanging out at Stanford with some friends and Benjamin Cosman, the Benevolent Dictator for Life of the Caltech Puzzle Club.[^ack] Somewhere between Shadi's combinatorics p-set and Rafi's rapping, the axiom of choice[^axiom] came up in conversation, and Ben gave me the following puzzle to demonstrate its wackiness. 
 
-[spherical]:http://en.wikipedia.org/wiki/Spherical_geometry
-[hyperbolic geometry]:http://en.wikipedia.org/wiki/Hyperbolic_geometry
-
-[^parallel]: Euclid's Fifth Postulate: "If a line segment intersects two straight lines forming two interior angles on the same side that sum to less than two right angles, then the two lines, if extended indefinitely, meet on that side on which the angles sum to less than two right angles" ([Wikipedia]).
-
-[Wikipedia]: http://en.wikipedia.org/wiki/Parallel_postulate 
-
-The [axiom of choice] causes really intreresting things to happen. An informal definition is:
+[^axiom]: While there are many forms of the [axiom of choice], here's one way to think about it: if you have an infinite number of sets of arbitrary sizes, there exists a deterministic choice function which will choose one element from each set. 
 
 [axiom of choice]:http://en.wikipedia.org/wiki/Axiom_of_choice
 
-> If you have an infinite number of sets of arbitrary sizes, there exists a deterministic chioce function which will choose one element from each set.
-
-Seemingly innocuous, right? I was hanging out at Stanford with some friends and Benjamin Cosman, the Benevolent Dictator for Life of the Caltech Puzzle Club when this topic came up in conversation. Ben gave me the following puzzle whose solution relies on the axiom of choice to see what sort of craziness it causes.[^ack] 
-
 [^ack]: Thanks to Ben for also editing this post.
 
-The Infinite Gnomes with Hats Puzzle[^2]
+The Puzzle
 ---
+### Infinite Gnomes with Hats[^2]
 
-[^2]: [Tanya Khovanova] has a nice blog post about this that I stumbled across when I was trying to make sure I'd understood it correctly.
+[^2]: Tanya Khovanova has [a nice blog post](http://blog.tanyakhovanova.com/?p=157) about this that I stumbled across when I was trying to make sure I'd understood it correctly, and Greg Muller also wrote [a humorous post](http://cornellmath.wordpress.com/2007/09/13/the-axiom-of-choice-is-wrong/) on it.
 
-[Tanya Khovanova]: http://blog.tanyakhovanova.com/?p=157
-
-There is a crowd of a countably infinite number of gnomes (with infinite vision and memory), such that each is randomly assigned, independently of the others, to have a black or white hat. They will all be asked to write down what hat they think they are wearing, and can confer before hat assignments. The gnomes will win if they as a whole have an infinite success rate, with only a finite number of gnomes guessing incorrectly. What should their strategy be? This is solvable, if you believe in the axiom of choice.
+There is a crowd of a countably infinite number of gnomes (with infinite vision and memory), such that each is randomly assigned, independently of the others, to have a black or white hat. They will all be asked to write down what hat they think they are wearing, and can confer before hat assignments. The gnomes will win if they as a whole have an infinite success rate, with only a finite number of gnomes guessing incorrectly. What should their strategy be?
 
 The Solution
-------
+-----
 
 ### Codes and Buckets
 
@@ -57,7 +45,22 @@ When a gnome looks at all the gnomes in front of them, they know which bucket th
 
 Because the bucket is defined as the set of all codes with a finite error from the representative code of that bucket, regardless of what the representative code is, the accuracy of any individual gnome does not mattter. The code composed of all the gnomes' hat assignments is in the same bucket as the representative code, which is the code composed of their guesses, and so the guesses code can only have a finite error relative to the assignments code. Following this algorithm, only a finite number of gnomes will guess incorrectly, corresponding to the errors, and so they will have an infinite success rate and win.
 
+
 Apparent Paradox
 ------
 
-This solution feels paradoxical because each gnome's guess relies on no information about the gnome hats behind them and is determined seemingly arbitrarily from the pattern of hats in front of them---and yet the gnomes as a whole have an infinite success rate. Inspecting the algorithm we used, the only questionable step is when we invoked the axiom of choice. If we don't believe in it, the solution does not work, but believing in it gives us this elegant algorithm.
+Does this solution feel paradoxical? Each gnome's guess relies on no information about the gnome hats behind them and is determined seemingly arbitrarily from the pattern of hats in front of them. And yet the gnomes as a whole have an infinite success rate, with only finite incorrect guesses. 
+
+Inspecting the algorithm we used, the sketchiest step is when we chose a representative from each bucket, which required the axiom of choice. You could resolve the paradox by rejecting this step. And really, doing so would be entirely up to you because that step is just an article of faith -- an axiom. 
+
+The Role of Faith in Math
+-------
+
+Axioms are the building blocks of mathematics, with which all proofs and theorems are constructed. They are the only aspect of math that is considered to require faith. Change the axioms and you might get an entirely different self-consistent and beautiful system. For example, whole new systems of geometry, known as [spherical] and [hyperbolic geometry], grew out of challenging Euclid's Fifth Postulate on parallel lines[^parallel], which was considered an essential axiom of geometry for thousands of years.
+
+[spherical]:http://en.wikipedia.org/wiki/Spherical_geometry
+[hyperbolic geometry]:http://en.wikipedia.org/wiki/Hyperbolic_geometry
+
+[^parallel]: Euclid's Fifth Postulate: "If a line segment intersects two straight lines forming two interior angles on the same side that sum to less than two right angles, then the two lines, if extended indefinitely, meet on that side on which the angles sum to less than two right angles" ([Wikipedia](http://en.wikipedia.org/wiki/Parallel_postulate)).
+
+As Bertrand Russell put it, "The Axiom of Choice is necessary to select a set from an infinite number of socks, but not an infinite number of shoes" ([Wikipedia](http://en.wikipedia.org/wiki/Axiom_of_choice#Quotes)). While it feels quite natural to accept the axiom of choice, doing so gives us this paradoxical solution to the infinite gnomes puzzle. 
