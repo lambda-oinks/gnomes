@@ -6,7 +6,7 @@ mathjax: on
 published: true
 ---
 
-As many great stories start, I was hanging out at Stanford with some friends and Benjamin Cosman, the Benevolent Dictator for Life of the Caltech Puzzle Club.[^ack] Somewhere between Shadi's combinatorics p-set and Rafi's rapping, the axiom of choice[^axiom] came up in conversation, and Ben gave me the following puzzle to demonstrate its wackiness. 
+As many great stories start, I was hanging out at Stanford with some friends and Benjamin Cosman, the Benevolent Dictator for Life of the Caltech Puzzle Club.[^ack] Somewhere between Shadi's combinatorics p-set and Rafi's rapping, the axiom of choice[^axiom] came up in conversation, and Ben told me about the following puzzle to demonstrate its wackiness. 
 
 [^axiom]: While there are many forms of the [axiom of choice], here's one way to think about it: if you have an infinite number of sets of arbitrary sizes, there exists a deterministic choice function which will choose one element from each set. 
 
